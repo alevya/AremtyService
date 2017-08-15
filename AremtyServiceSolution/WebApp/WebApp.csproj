@@ -151,7 +151,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AremtyContextDB.cs" />
+    <Compile Include="Models\AremtyContextDb.cs" />
     <Compile Include="Models\GuiDashboard.cs" />
     <Compile Include="Models\GuiPanel.cs" />
     <Compile Include="Models\Widget.cs" />

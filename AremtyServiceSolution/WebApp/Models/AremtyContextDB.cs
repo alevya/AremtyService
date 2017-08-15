@@ -10,11 +10,6 @@ namespace WebApp.Models
     {
         #region Init
 
-        public AremtyContextDb() : base("AremtyConnection")
-        {
-            
-        }
-
         public DbSet<GuiDashboard> GuiDashboards { get; set; }
         public DbSet<GuiPanel> GuiPanels { get; set; }
         public DbSet<Widget> Widgets { get; set; }
