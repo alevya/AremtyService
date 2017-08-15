@@ -3,28 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApp.Models;
 
 namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AremtyContextDb _aremtyContextDb = new AremtyContextDb(); 
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+
+        protected override void Dispose(bool disposing)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            _aremtyContextDb.Dispose();
+            base.Dispose(disposing);
         }
     }
 }
