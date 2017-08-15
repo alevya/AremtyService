@@ -12,7 +12,7 @@ namespace WebApp.Controllers
         private readonly AremtyContextDb _aremtyContextDb = new AremtyContextDb(); 
         public ActionResult Index()
         {
-            return View();
+            return View(_aremtyContextDb.GuiDashboards);
         }
 
 
