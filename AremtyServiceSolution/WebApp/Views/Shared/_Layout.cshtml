@@ -21,7 +21,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Войти", "Index", "Home")</li>
+                    @if ((bool) ViewData["isLogIn"] == false)
+                    {
+                        <li>@Html.ActionLink("Войти", "LogIn", "Home")</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Выйти", "LogOut", "Home")</li>
+                    }
                 </ul>
             </div>
         </div>

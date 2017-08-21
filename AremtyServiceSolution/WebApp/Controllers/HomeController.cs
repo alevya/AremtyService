@@ -10,12 +10,26 @@ namespace WebApp.Controllers
     public class HomeController : Controller
     {
         private readonly AremtyContextDb _aremtyContextDb = new AremtyContextDb(); 
-        public ActionResult Index()
+
+        [HttpGet]
+        public ActionResult Index(bool isLogIn = false)
         {
-            return View(_aremtyContextDb.GuiDashboards);
+            //return View(_aremtyContextDb.GuiDashboards);
+            return View(ViewData["isLogIn"] = isLogIn);
         }
 
+        [HttpGet]
+        public ActionResult LogIn()
+        {
+            return Index(true);
+        }
 
+        [HttpGet]
+        public ActionResult LogOut()
+        {
+            Index();
+            return View("Index");
+        }
         protected override void Dispose(bool disposing)
         {
             _aremtyContextDb.Dispose();
