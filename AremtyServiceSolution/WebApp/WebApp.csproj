@@ -182,10 +182,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AremtyContextDb.cs" />
-    <Compile Include="Models\GuiDashboard.cs" />
-    <Compile Include="Models\GuiPanel.cs" />
-    <Compile Include="Models\Widget.cs" />
+    <Compile Include="Models\Identity\AppIdenityDbContext.cs" />
+    <Compile Include="Models\Aremty\AremtyContextDb.cs" />
+    <Compile Include="Models\Aremty\GuiDashboard.cs" />
+    <Compile Include="Models\Aremty\GuiPanel.cs" />
+    <Compile Include="Models\Aremty\Widget.cs" />
+    <Compile Include="Models\Identity\AppUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
