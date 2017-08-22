@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using WebApp.Models.Identity;
 
+[assembly:OwinStartup(typeof(WebApp.StartUp))]
 namespace WebApp
 {
     public class StartUp
