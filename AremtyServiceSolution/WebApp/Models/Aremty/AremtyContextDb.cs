@@ -1,12 +1,13 @@
 ﻿using System.Data.Entity;
+using WebApp.Models.Identity;
 
 namespace WebApp.Models.Aremty
 {
-    public class AremtyContextDb : DbContext
+    public class AremtyContextDb : AppIdenityDbContext
     {
         #region Init
 
-        public AremtyContextDb() : base("AremtyDb")
+        public AremtyContextDb()
         { }
 
         public DbSet<GuiDashboard> GuiDashboards { get; set; }

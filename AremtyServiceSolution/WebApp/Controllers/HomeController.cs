@@ -10,7 +10,7 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly AremtyContextDb _aremtyContextDb = new AremtyContextDb(); 
+        //private readonly AremtyContextDb _aremtyContextDb = new AremtyContextDb(); 
 
         [HttpGet]
         public ActionResult Index(bool isLogIn = false)
@@ -31,10 +31,10 @@ namespace WebApp.Controllers
             Index();
             return View("Index");
         }
-        protected override void Dispose(bool disposing)
-        {
-            _aremtyContextDb.Dispose();
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    _aremtyContextDb.Dispose();
+        //    base.Dispose(disposing);
+        //}
     }
 }
