@@ -177,6 +177,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\StartUp.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="CustomRouting\CustomRouteHandler.cs" />
     <Compile Include="Global.asax.cs">
@@ -188,6 +189,7 @@
     <Compile Include="Models\Aremty\GuiPanel.cs" />
     <Compile Include="Models\Aremty\Widget.cs" />
     <Compile Include="Models\Identity\AppUser.cs" />
+    <Compile Include="Models\Identity\AppUserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
