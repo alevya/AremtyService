@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using WebApp.CustomRouting;
 
 namespace WebApp
 {
@@ -18,6 +19,13 @@ namespace WebApp
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            var customRoute = new Route(
+                url: "{controller}/{action}/{id}",
+                routeHandler: new CustomRouteHandler(),
+                defaults: new RouteValueDictionary(new { controller = "Home", action = "Index", id = UrlParameter.Optional })
+
+            );
+            routes.Add(customRoute);
         }
     }
 }
