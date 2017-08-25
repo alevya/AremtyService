@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{23EAF477-8033-434B-90F6-EA84D767355E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aremty.Core", "AremtyCore\Aremty.Core.csproj", "{F9B305F4-6C2A-4980-8C8F-059C0892A743}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{9713769D-A0EA-43AC-9970-976DCDDAD479}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +21,11 @@ Global
 		{F9B305F4-6C2A-4980-8C8F-059C0892A743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B305F4-6C2A-4980-8C8F-059C0892A743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B305F4-6C2A-4980-8C8F-059C0892A743}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9713769D-A0EA-43AC-9970-976DCDDAD479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9713769D-A0EA-43AC-9970-976DCDDAD479}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9713769D-A0EA-43AC-9970-976DCDDAD479}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9713769D-A0EA-43AC-9970-976DCDDAD479}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {823C5765-A92B-481B-BAB1-1F835EFC6A8E}
 	EndGlobalSection
 EndGlobal
